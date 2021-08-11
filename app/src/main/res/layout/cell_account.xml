@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tool="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="viewModel"
+            type="com.getmoneytree.moneytreelite.ui.accounts.AccountsViewModel" />
+        <variable
+            name="account"
+            type="com.getmoneytree.moneytreelite.data.models.MAccount" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:foreground="?attr/selectableItemBackground"
+        android:onClick="@{v -> viewModel.onAccountClick(account)}"
+        >
+
+        <TextView
+            android:id="@+id/name"
+            style="@style/H5.regular"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@{account.name}"
+            tool:text="Institution Name"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/amount"
+            app:layout_constraintBottom_toBottomOf="parent"
+            />
+
+        <TextView
+            android:id="@+id/amount"
+            style="@style/H4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@{account.balance()}"
+            tool:text="JPY 2,000"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/name"
+            app:layout_constraintBottom_toBottomOf="@id/name"
+            />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

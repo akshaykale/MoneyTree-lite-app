@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main_nav"
+    app:startDestination="@id/accountsFragment">
+
+    <fragment
+        android:id="@+id/accountsFragment"
+        android:name="com.getmoneytree.moneytreelite.ui.accounts.AccountsFragment"
+        android:label="AccountsFragment" >
+        <action
+            android:id="@+id/action_accountsFragment_to_transactionsFragment"
+            app:destination="@id/transactionsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/transactionsFragment"
+        android:name="com.getmoneytree.moneytreelite.ui.transactions.TransactionsFragment"
+        android:label="TransactionsFragment" >
+        <argument
+            android:name="account"
+            app:argType="com.getmoneytree.moneytreelite.data.models.MAccount" />
+    </fragment>
+</navigation>
