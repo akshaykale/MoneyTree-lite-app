@@ -59,6 +59,7 @@ User **RoomDb** to store the accounts and transactions locally on background thr
 - Kotlin Coroutine and Flow for the data flow and events handling.
 - ViewModel for persisting data on a fragment or Activity level.
 - Room Db to store the data locally.
+- Used Navigation Graph for the navigatoin between the fragments.
 
 ## Testing
 - **AccountsDao** and **TransactionDao** test cases are written to test the room db operation of read, write, delete methods.
