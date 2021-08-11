@@ -35,8 +35,7 @@ User **RoomDb** to store the accounts and transactions locally on background thr
 - Accounts list **grouped** by institution name.
 - Total balance card in base currency (JPY)
 - Open Transaction screen when clicked on the account
-
-![Screenshot_1628706158](https://user-images.githubusercontent.com/10893215/129082753-b2d5962f-a57d-4d70-a0f6-0a9b542a0fe7.png =250x)
+<img width="354" alt="Screen Shot" src="https://user-images.githubusercontent.com/10893215/129082753-b2d5962f-a57d-4d70-a0f6-0a9b542a0fe7.png">
 
 
 
@@ -46,8 +45,9 @@ User **RoomDb** to store the accounts and transactions locally on background thr
 - Show **in/out** amount in a month.
 - **Delete a transaction**
 
-![Screenshot_1628706219](https://user-images.githubusercontent.com/10893215/129082796-96e2a60e-c1f4-4386-a96e-16621edf880a.png =250x) 
-![Screenshot_1628706238](https://user-images.githubusercontent.com/10893215/129082840-ab5c7ef4-0514-4cce-96d7-a027e44d4767.png =250x)
+
+<img width="354" alt="Screen Shot" src="https://user-images.githubusercontent.com/10893215/129082796-96e2a60e-c1f4-4386-a96e-16621edf880a.png"> <img width="354" alt="Screen Shot" src="https://user-images.githubusercontent.com/10893215/129082840-ab5c7ef4-0514-4cce-96d7-a027e44d4767.png">
+
 
 
 
