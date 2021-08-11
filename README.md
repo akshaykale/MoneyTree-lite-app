@@ -12,6 +12,11 @@ Reason -  time consuming to enable the data binding and view binding for the exi
 
 -| **ui** package can be considered as Model and ViewModel (contains Fragment and ViewModel and related classes like RecyclerViewAdapter, etc)
 
+<img width="354" alt="Screen Shot 2021-08-12 at 3 20 58" src="https://user-images.githubusercontent.com/10893215/129082471-f23ff6dc-c51a-43ed-8084-1e8bf4162f01.png">
+
+
+
+
 This layers of 
 - View (Activity/Fragment)
 - ViewModel
@@ -22,20 +27,29 @@ To glue the **data** and **viewModel** layers we are using **coroutine flow**
 and to handle interaction between **viewModel** and **View** we are using **data binding**.
 
 
-### Data story
+## Data story
 User **RoomDb** to store the accounts and transactions locally on background thread without obstructing the main thread.
 
-### UI
+## UI
 #### Accounts Screen
 - Accounts list **grouped** by institution name.
 - Total balance card in base currency (JPY)
 - Open Transaction screen when clicked on the account
+
+![Screenshot_1628706158](https://user-images.githubusercontent.com/10893215/129082753-b2d5962f-a57d-4d70-a0f6-0a9b542a0fe7.png =250x)
+
+
 
 #### Transaction Screen
 - Show Account information
 - Show transaction list of selected account grouped by **Month Year** in decreasing order.
 - Show **in/out** amount in a month.
 - **Delete a transaction**
+
+![Screenshot_1628706219](https://user-images.githubusercontent.com/10893215/129082796-96e2a60e-c1f4-4386-a96e-16621edf880a.png =250x) 
+![Screenshot_1628706238](https://user-images.githubusercontent.com/10893215/129082840-ab5c7ef4-0514-4cce-96d7-a027e44d4767.png =250x)
+
+
 
 
 ## Tech
@@ -46,8 +60,9 @@ User **RoomDb** to store the accounts and transactions locally on background thr
 - ViewModel for persisting data on a fragment or Activity level.
 - Room Db to store the data locally.
 
-### Testing
+## Testing
 - **AccountsDao** and **TransactionDao** test cases are written to test the room db operation of read, write, delete methods.
+<img width="525" alt="Screen Shot 2021-08-12 at 3 18 24" src="https://user-images.githubusercontent.com/10893215/129082257-2f6e1fd3-0a00-4c3a-a8e4-c3f2fb8ac330.png">
 
 
 ## Points to improve
